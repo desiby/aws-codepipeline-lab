@@ -3,6 +3,7 @@ Parameters:
   BucketNameParameter:
     Type: String
     Description: S3 Bucket Name
+    Default: dbb-bucket-pipeline
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
