@@ -6,4 +6,4 @@ env:
 phases:
   build:
      commands:
-     - aws cloudformation describe-stacks --stack jmd-020210105-pipeline --query 'Stacks[*][StackStatus]' --output text
+     - aws cloudformation describe-stacks --stack-name pipeline-dbb --query 'Stacks[*][StackStatus]' --output text
