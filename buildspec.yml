@@ -1,0 +1,9 @@
+version: 0.2
+
+env:
+  shell: bash
+
+phases:
+  build:
+     commands:
+     - aws cloudformation validate-template --template-body file://bucket.yaml
