@@ -6,4 +6,4 @@ env:
 phases:
   build:
      commands:
-     - aws cloudformation describe-stacks --stack-name pipeline-dbb --query 'Stacks[*][StackStatus]' --output text
+     - aws s3api head-bucket --bucket "desire.bahbioh.deployed.bucket"
